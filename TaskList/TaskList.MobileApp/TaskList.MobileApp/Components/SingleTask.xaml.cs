@@ -25,7 +25,7 @@ namespace TaskList.MobileApp.Components
             if (task.Completed) BackgroundColor = Color.GreenYellow;
 
             btnEdit.Clicked += async delegate {
-                await Navigation.PushModalAsync(new EditTaskPage(task));
+                await Navigation.PushModalAsync(new AddTaskPage(task));
             };
 
         }

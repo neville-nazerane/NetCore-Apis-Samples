@@ -4,7 +4,7 @@
              x:Class="TaskList.MobileApp.Pages.AddTaskPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Add a new task" FontSize="Large" />
+            <Label Text="Manage task" FontSize="Large" />
 
             <StackLayout Margin="10" Padding="5" BackgroundColor="Aqua">
                 <Entry x:Name="title" Placeholder="Title" />
@@ -30,6 +30,8 @@
                 </StackLayout>
             </StackLayout>
             <Button x:Name="btnAdd" Text="Add" />
+            <Button x:Name="btnEdit" Text="Update" />
+            <Button x:Name="btnDelete" Text="Delete" />
             <Button x:Name="btnHome" Text="Show complete List" />
         </StackLayout>
     </ContentPage.Content>
