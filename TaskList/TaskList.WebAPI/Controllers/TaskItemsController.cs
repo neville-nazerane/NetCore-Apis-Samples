@@ -25,7 +25,7 @@ namespace TaskList.WebAPI.Controllers
         [HttpGet]
         public IEnumerable<TaskItem> GetTaskItems()
         {
-            return _context.TaskItems;
+            return _context.TaskItems.OrderBy(t => t.Priority);
         }
 
         // GET: api/TaskItems/5

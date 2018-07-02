@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskList.MobileApp.Components.SingleTask"
+             Margin="5"
+             Padding="4"
+             IsClippedToBounds="True"
+             BorderColor="Blue">
+    <StackLayout>
+        <Label x:Name="title" FontSize="Medium" FontAttributes="Bold" />
+        <StackLayout Orientation="Vertical" BackgroundColor="BlueViolet">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Start Time:" class="keyHead" />
+                <Label x:Name="startTime" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="End Time:" class="keyHead" />
+                <Label x:Name="endTime" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Priority:" class="keyHead" />
+                <Label x:Name="priority" />
+            </StackLayout>
+            <Button Text="Edit" x:Name="btnEdit" />
+        </StackLayout>
+    </StackLayout>
+</Frame>

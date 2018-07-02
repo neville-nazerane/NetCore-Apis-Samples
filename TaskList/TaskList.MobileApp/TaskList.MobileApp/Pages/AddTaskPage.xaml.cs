@@ -28,8 +28,12 @@ namespace TaskList.MobileApp.Pages
             btnAdd.Clicked += async delegate {
                 await handler.SubmitAsync(
                     async t => await ConsumeSetup.Consumer.PostAsync("api/TaskItems", t),
-                    s => DisplayAlert("success", s, "OK")
+                    async s => await Navigation.PushModalAsync(new MainPage())
                 );
+            };
+
+            btnHome.Clicked += async delegate {
+                await Navigation.PushModalAsync(new MainPage());
             };
 
 		}

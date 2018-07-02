@@ -30,6 +30,7 @@
                 </StackLayout>
             </StackLayout>
             <Button x:Name="btnAdd" Text="Add" />
+            <Button x:Name="btnHome" Text="Show complete List" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

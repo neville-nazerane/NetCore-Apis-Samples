@@ -5,7 +5,9 @@
 
     <StackLayout>
         <Button x:Name="btnAdd" Text="Add" BackgroundColor="LightGreen" />
-        <StackLayout x:Name="tasks" />
+        <ScrollView Orientation="Vertical">
+            <StackLayout x:Name="tasks" />
+        </ScrollView>
     </StackLayout>
 
 </ContentPage>
