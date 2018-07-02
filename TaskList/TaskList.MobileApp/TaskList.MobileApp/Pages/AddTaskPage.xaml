@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaskList.MobileApp.Pages.AddTaskPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Add a new task" FontSize="Large" />
+
+            <StackLayout Margin="10" Padding="5" BackgroundColor="Aqua">
+                <Entry x:Name="title" Placeholder="Title" />
+                <StackLayout x:Name="titleErr" />
+                <Entry x:Name="priority" Placeholder="Priority" />
+                <StackLayout x:Name="priorityErr" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Start time" />
+                    <DatePicker x:Name="startDate" /> 
+                    <TimePicker x:Name="startTime" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="End time" />
+                    <DatePicker x:Name="endDate" />
+                    <TimePicker x:Name="endTime" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Completed" />
+                    <Switch x:Name="completed" />
+                </StackLayout>
+            </StackLayout>
+            <Button x:Name="btnAdd" Text="Add" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
